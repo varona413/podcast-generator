@@ -1,5 +1,5 @@
-# Shebang specifies interpreter to execute script
 #!/bin/bash
+# Shebang specifies interpreter to execute script
 
 echo "===================="
 

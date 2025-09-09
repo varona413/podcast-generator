@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Procure Ubuntu VM with latest ver
 FROM ubuntu:latest
 
