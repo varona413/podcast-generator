@@ -19,5 +19,5 @@ COPY entrypoint.sh /entrypoint.sh
 # Ensure entrypoint.sh has correct line endings and executable permission
 RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 
-# Specify entry point
+# Specify entry point as this
 ENTRYPOINT ["/entrypoint.sh"]
