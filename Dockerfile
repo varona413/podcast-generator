@@ -16,5 +16,8 @@ RUN apt-get update && apt-get install -y python3-yaml
 COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh 
 
+# Ensure entrypoint.sh has correct line endings and executable permission
+RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
+
 # Specify entry point
 ENTRYPOINT ["/entrypoint.sh"]
